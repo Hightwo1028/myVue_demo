@@ -1,6 +1,7 @@
+//存儲路由
 import { createRouter, createWebHistory } from "vue-router";
 
-const routers = [
+const routes = [
     {
         path:'/',
         component: () => import('../views/index.vue')

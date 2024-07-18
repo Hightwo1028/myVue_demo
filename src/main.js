@@ -15,7 +15,7 @@
 // app.use(pinia)
 // app.mount('#app')
 
- import router from './router'
+ import router from './router'  //可以找到router裡的兩個文件
 
  createApp(App).use(router).mount('#app')
 
