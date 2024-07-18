@@ -1,26 +1,19 @@
 <script setup>
-import { reactive } from "vue";
-import Header from "./components/header.vue";
-import Footer from "./components/footer.vue";
+  // import { useWebStore } from './stores/web.js'
 
-const propsWeb = {
-  user: 10,
-  url: "www.hightwo.com",
-};
-const userAdd = () => {
-  propsWeb.user++;
-  console.log(propsWeb.user);
-};
+  // const webStore = useWebStore()
+  // console.log(webStore.web);
+  // console.log(webStore.users);
 </script>
 
 <template>
-  <Header propsName="嗨兔扣頂" propsUrl="hightwo.com" />
+  <!-- {{ webStore.web.url }}
+  {{ webStore.users }}
 
-  hightwocode.com
-  <button @click="userAdd">添加事件</button>
-
-  <!-- <Footer v-bind="propsWeb"/> -->D
-  <Footer :="propsWeb" />
+  <button @click="webStore.userAdd">添加用戶</button> -->
+  <router-view />
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
