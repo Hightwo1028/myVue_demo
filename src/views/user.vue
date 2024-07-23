@@ -6,6 +6,7 @@
     個人主頁 <hr>
 
     id: {{ $route.params.id }}
+    <br>
     name: {{ $route.params.name }}
 </template>
 
